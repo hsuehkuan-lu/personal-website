@@ -1,17 +1,18 @@
 <mat-toolbar class="outside">
   <div class="inside">
-    <button
+    <a
       mat-icon-button
       class="home"
       color="primary"
       aria-label="Top-left home button"
+      [routerLink]="['']"
     >
       <mat-icon>home</mat-icon>
-    </button>
+    </a>
     <span>Peter Lu</span>
     <span class="spacer"></span>
-    <button mat-button>Work</button>
-    <button mat-button>Blog</button>
-    <button mat-button>Contact</button>
+    <a mat-button [routerLink]="['work']">Work</a>
+    <a mat-button [routerLink]="['blog']">Blog</a>
+    <a mat-button [routerLink]="['contact']">Contact</a>
   </div>
 </mat-toolbar>
