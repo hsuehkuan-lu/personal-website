@@ -1,17 +1,20 @@
-<mat-toolbar class="outside">
-  <div class="inside">
-    <button
-      mat-icon-button
-      class="home"
-      color="primary"
-      aria-label="Top-left home button"
-    >
-      <mat-icon>home</mat-icon>
-    </button>
-    <span>Peter Lu</span>
-    <span class="spacer"></span>
-    <button mat-button>Work</button>
-    <button mat-button>Blog</button>
-    <button mat-button>Contact</button>
-  </div>
+<mat-toolbar class="top-bar">
+  <a
+    mat-button
+    class="auto"
+    color="primary"
+    [routerLink]="['']"
+    fragment="home"
+  >
+    Home
+  </a>
+  <a mat-button class="auto" [routerLink]="['']" fragment="work">Work</a>
+  <a mat-button class="auto" [routerLink]="['']" fragment="blog">Blog</a>
+  <a mat-button class="auto" [routerLink]="['']" fragment="contact">Contact</a>
 </mat-toolbar>
+
+<mat-progress-bar
+  class="progress-bar"
+  mode="determinate"
+  [value]="progressValue$ | async"
+></mat-progress-bar>
