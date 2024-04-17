@@ -10,9 +10,17 @@ import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, WorkComponent, BlogComponent, ContactComponent],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    WorkComponent,
+    HomeComponent,
+    BlogComponent,
+    ContactComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

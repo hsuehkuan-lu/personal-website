@@ -1,12 +1,17 @@
-.spacer {
-  flex: 1 1 auto;
-}
-
-.outside {
+.top-bar {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
+  height: 42px;
 }
 
-.inside {
-  margin: auto;
+.auto {
+  flex: auto;
+  width: 100%;
+}
+
+.progress-bar {
+  position: fixed;
+  margin-top: 40px;
 }
