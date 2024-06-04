@@ -8,7 +8,7 @@ const routes: Routes = [{ title: 'main', path: '', component: MainComponent }];
   imports: [
     RouterModule.forRoot(routes, {
       anchorScrolling: 'enabled',
-      scrollOffset: [0, 50],
+      scrollOffset: [0, 42],
       scrollPositionRestoration: 'enabled',
     }),
   ],
