@@ -1,7 +1,7 @@
 .intro {
   background: url(../../assets/images/concrete.jpg);
   background-size: cover;
-  padding: 18% 0 0 0;
+  padding: 12% 0 0 0;
   height: 100%;
   width: 100%;
 }
@@ -15,9 +15,15 @@ h1 {
 
 h2 {
   font-size: 40px;
-  line-height: 3vw;
+  line-height: 11vw;
 }
 
 p {
   font-size: 25px;
+  line-height: 30px;
+  padding: 0 10% 0 10%;
+}
+
+a {
+  line-height: 10vw;
 }
