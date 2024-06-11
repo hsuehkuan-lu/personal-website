@@ -1,17 +1,15 @@
 <div class="body text-center">
-  <section id="home" class="content">
-    <app-home></app-home>
-  </section>
-
-  <section id="about" class="content">
-    <app-about></app-about>
-  </section>
-
-  <section id="work" class="content">
-    <app-work></app-work>
-  </section>
-
-  <section id="contact" class="content">
-    <app-contact></app-contact>
+  <section *ngFor="let page of constants.PAGES" [id]="page" [ngSwitch]="page">
+    <app-home *ngSwitchCase="constants.HOME_PAGE" class="content"></app-home>
+    <app-about *ngSwitchCase="constants.ABOUT_PAGE" class="content"></app-about>
+    <app-experience
+      *ngSwitchCase="constants.EXPERIENCE_PAGE"
+      class="content"
+    ></app-experience>
+    <app-work *ngSwitchCase="constants.WORK_PAGE" class="content"></app-work>
+    <app-contact
+      *ngSwitchCase="constants.CONTACT_PAGE"
+      class="content"
+    ></app-contact>
   </section>
 </div>

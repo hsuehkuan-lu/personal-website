@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { Constants } from '../constant';
 
 import { map } from 'rxjs/operators';
 import { fromEvent, Observable } from 'rxjs';
@@ -23,6 +24,7 @@ import { fromEvent, Observable } from 'rxjs';
 })
 export class TopBarComponent implements OnInit {
   progressValue$!: Observable<any>;
+  readonly constants = Constants;
 
   ngOnInit(): void {
     this.getprogressValue();

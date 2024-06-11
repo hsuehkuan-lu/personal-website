@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 
-const routes: Routes = [{ title: 'main', path: '', component: MainComponent }];
+const routes: Routes = [
+  { title: 'Peter Lu', path: '', component: MainComponent },
+];
 
 @NgModule({
   imports: [
