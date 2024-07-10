@@ -21,7 +21,6 @@ import { ExperienceComponent } from './experience/experience.component';
     AboutComponent,
     ContactComponent,
     AboutComponent,
-    ExperienceComponent,
   ],
   imports: [
     HomeComponent,
@@ -30,6 +29,7 @@ import { ExperienceComponent } from './experience/experience.component';
     BrowserAnimationsModule,
     TopBarComponent,
     FooterComponent,
+    ExperienceComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

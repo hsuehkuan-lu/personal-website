@@ -1,3 +1,33 @@
 <div class="experience">
   <h2>Experience</h2>
+  <ng-container *ngFor="let exp of experiences">
+    <mat-card class="experience-card" appearance="outlined">
+      <mat-card-header class="experience-card-header">
+        <img
+          mat-card-avatar
+          *ngIf="exp.img"
+          [src]="exp.img"
+          class="experience-header-image"
+        />
+        <mat-card-title>{{ exp.name }}</mat-card-title>
+        <mat-card-subtitle>{{ exp.role }}</mat-card-subtitle>
+        <mat-card-subtitle
+          >{{ exp.startDate | date : "MMM yyyy" }} -
+          {{ exp.endDate | date : "MMM yyyy" }}</mat-card-subtitle
+        >
+      </mat-card-header>
+
+      <mat-card-content class="experience-card-content">
+        <p>{{ exp.description }}</p>
+      </mat-card-content>
+
+      <mat-card-footer *ngIf="exp.tags" class="experience-card-footer">
+        <mat-chip-set aria-label="Experience tags">
+          <ng-container *ngFor="let tag of exp.tags">
+            <mat-chip>{{ tag }}</mat-chip>
+          </ng-container>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+  </ng-container>
 </div>
