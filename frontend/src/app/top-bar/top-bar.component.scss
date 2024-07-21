@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   height: 42px;
+  // Ensure other content doesn't overlap the tool bar.
+  z-index: 1000;
 }
 
 .auto {
@@ -14,4 +16,6 @@
 .progress-bar {
   position: fixed;
   margin-top: 40px;
+  // Ensure other content doesn't overlap the progress bar.
+  z-index: 1000;
 }
